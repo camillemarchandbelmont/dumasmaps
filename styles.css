@@ -185,91 +185,6 @@ header p {
     border-radius: var(--border-radius);
 }
 
-/* Plan du lycée */
-.plan-container {
-    background: white;
-    padding: 30px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    margin-bottom: 30px;
-}
-
-.plan-container h3 {
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.batiments {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 20px 0;
-}
-
-.batiment {
-    background: #f8f9fa;
-    border: 2px solid #dee2e6;
-    border-radius: var(--border-radius);
-    padding: 20px;
-    min-width: 200px;
-    text-align: center;
-}
-
-.batiment h4 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-}
-
-.etages {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.etage {
-    background: white;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-}
-
-.etage:hover {
-    background: var(--primary-color);
-    color: white;
-    cursor: pointer;
-}
-
-.liaison {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 0 20px;
-}
-
-.cour {
-    background: var(--secondary-color);
-    color: var(--dark-color);
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.escalier-exterieur {
-    background: #e0e0e0;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    border: 2px dashed #999;
-}
 
 /* Footer */
 footer {
@@ -319,25 +234,4 @@ footer {
 
 .resultat {
     animation: fadeIn 0.5s ease-out;
-}
-
-/* États des salles */
-.salle-depart {
-    background: #e8f5e8 !important;
-    border-color: var(--success-color) !important;
-    color: var(--success-color) !important;
-    font-weight: bold;
-}
-
-.salle-arrivee {
-    background: #fff3e0 !important;
-    border-color: var(--secondary-color) !important;
-    color: #f57c00 !important;
-    font-weight: bold;
-}
-
-.salle-parcours {
-    background: #e3f2fd !important;
-    border-color: var(--primary-color) !important;
-    color: var(--primary-color) !important;
 }
