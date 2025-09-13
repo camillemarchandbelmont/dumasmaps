@@ -1,0 +1,53 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond bleu -->
+  <rect width="512" height="512" rx="64" fill="#2196F3"/>
+  
+  <!-- Icône de bâtiment/école -->
+  <g transform="translate(128, 128)">
+    <!-- Bâtiment principal -->
+    <rect x="48" y="96" width="144" height="144" fill="white" stroke="none"/>
+    <rect x="56" y="104" width="20" height="20" fill="#2196F3"/>
+    <rect x="88" y="104" width="20" height="20" fill="#2196F3"/>
+    <rect x="120" y="104" width="20" height="20" fill="#2196F3"/>
+    <rect x="152" y="104" width="20" height="20" fill="#2196F3"/>
+    
+    <rect x="56" y="136" width="20" height="20" fill="#2196F3"/>
+    <rect x="88" y="136" width="20" height="20" fill="#2196F3"/>
+    <rect x="120" y="136" width="20" height="20" fill="#2196F3"/>
+    <rect x="152" y="136" width="20" height="20" fill="#2196F3"/>
+    
+    <rect x="56" y="168" width="20" height="20" fill="#2196F3"/>
+    <rect x="88" y="168" width="20" height="20" fill="#2196F3"/>
+    <rect x="120" y="168" width="20" height="20" fill="#2196F3"/>
+    <rect x="152" y="168" width="20" height="20" fill="#2196F3"/>
+    
+    <rect x="56" y="200" width="20" height="20" fill="#2196F3"/>
+    <rect x="152" y="200" width="20" height="20" fill="#2196F3"/>
+    
+    <!-- Entrée -->
+    <rect x="88" y="200" width="48" height="40" fill="#2196F3"/>
+    
+    <!-- Toit -->
+    <polygon points="40,96 120,48 200,96" fill="white"/>
+    
+    <!-- Bâtiment secondaire -->
+    <rect x="8" y="144" width="80" height="96" fill="white" stroke="none"/>
+    <rect x="16" y="152" width="16" height="16" fill="#2196F3"/>
+    <rect x="40" y="152" width="16" height="16" fill="#2196F3"/>
+    <rect x="64" y="152" width="16" height="16" fill="#2196F3"/>
+    
+    <rect x="16" y="176" width="16" height="16" fill="#2196F3"/>
+    <rect x="40" y="176" width="16" height="16" fill="#2196F3"/>
+    <rect x="64" y="176" width="16" height="16" fill="#2196F3"/>
+    
+    <rect x="16" y="200" width="16" height="16" fill="#2196F3"/>
+    <rect x="64" y="200" width="16" height="16" fill="#2196F3"/>
+    <rect x="40" y="200" width="16" height="32" fill="#2196F3"/>
+    
+    <!-- Chemin entre bâtiments -->
+    <line x1="88" y1="184" x2="48" y2="184" stroke="white" stroke-width="4" stroke-dasharray="6,6"/>
+  </g>
+  
+  <!-- Texte -->
+  <text x="256" y="420" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">NAV</text>
+</svg>
