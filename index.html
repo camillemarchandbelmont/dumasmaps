@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Lycée</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2196F3">
+    <link rel="icon" type="image/png" href="icon-192.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏫 Navigation Lycée</h1>
+            <p>Trouvez votre chemin entre les salles</p>
+        </header>
+
+        <main>
+            <div class="selection-form">
+                <div class="form-group">
+                    <label for="depart">📍 Salle de départ :</label>
+                    <select id="depart" name="depart">
+                        <option value="">-- Choisir une salle --</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="arrivee">🎯 Salle d'arrivée :</label>
+                    <select id="arrivee" name="arrivee">
+                        <option value="">-- Choisir une salle --</option>
+                    </select>
+                </div>
+
+                <button id="calculer-itineraire" class="btn-primary">
+                    🧭 Calculer l'itinéraire
+                </button>
+            </div>
+
+            <div id="resultat-itineraire" class="resultat hidden">
+                <h2>📋 Votre itinéraire :</h2>
+                <div id="instructions"></div>
+                <div id="temps-estime"></div>
+            </div>
+
+            <div id="plan-lycee" class="plan-container">
+                <h3>📐 Plan du lycée</h3>
+                <div class="batiments">
+                    <div class="batiment" id="batiment1">
+                        <h4>Bâtiment 1 (4 étages)</h4>
+                        <div class="etages">
+                            <div class="etage">Étage 4</div>
+                            <div class="etage">Étage 3</div>
+                            <div class="etage">Étage 2</div>
+                            <div class="etage">Étage 1</div>
+                        </div>
+                    </div>
+                    <div class="liaison">
+                        <div class="cour">Cour niveau haut</div>
+                        <div class="escalier-exterieur">Escalier</div>
+                        <div class="cour">Cour niveau bas</div>
+                    </div>
+                    <div class="batiment" id="batiment2">
+                        <h4>Bâtiment 2 (2 étages)</h4>
+                        <div class="etages">
+                            <div class="etage">Étage 2</div>
+                            <div class="etage">Étage 1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Application de navigation pour le lycée</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Enregistrement du service worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then((registration) => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch((registrationError) => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
